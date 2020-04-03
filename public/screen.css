@@ -13,6 +13,10 @@ body {
   color: white;
 }
 
+main {
+  margin-bottom: 20px;
+}
+
 #title {
   font-size: 40px;
   text-align: center;
@@ -23,3 +27,68 @@ body {
   text-align: center;
 }
 
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#name, #email, #number {
+  min-width: 100%;
+  height: 30px;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+#number {
+  margin-bottom: 25px;
+}
+
+#episode-four, #episode-five, #episode-six {
+  margin-top: 5px;
+  margin-bottom: 10px;
+
+}
+
+#episode-six {
+  margin-bottom: 25px;
+}
+
+#dropdown {
+  margin-bottom: 25px;
+  width: 200px;
+  height: 30px;
+}
+
+#planets {
+  margin-bottom: 35px;
+}
+
+#submit {
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: rgb(223, 223, 223);
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: rgb(192, 190, 190);
+}
+
+.button-style {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.text-question {
+  margin-bottom: 25px;
+
+}
+
+.text-box {
+  min-width: 100%;
+  min-height: 70px;
+}

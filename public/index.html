@@ -10,90 +10,85 @@
   <body>
     <main>
       <h1 id="title">Star Wars Survey</h1>
-      <p id="description"><em>IT'S A TRAP!</em></p>
+      <p id="description"><em>"IT'S A TRAP!"</em></p>
 
-      <br>
-      <br>
-
-      <form id="survey-form">
-        <div>
-        <label id="name-label" for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-        <br>
-        <br>
-        <label id="email-label" for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your Email" required>
-        <br>
-        <br>
-        <label id="number-label" for="number">Age:</label>
-        <input type="number" min="0" max="100" id="number" name="age" placeholder="Age">
-        </div>
-
-        <div>
-          <p>Which episode from the Original Trilogy is your favorite?</p>
-        
-          <input type="radio" id="episode-four" name="favorite-episode" value="Episode-IV">
-          <label for="episode-four"><em>Episode IV: A New Hope</em></label>
-
-          <br>
-          <input type="radio" id="episode-five" name="favorite-episode" value="Episode-V">
-          <label for="episode-five"><em>Episode V: The Empire Strikes Back</em></label>
-
-          <br>
-          <input type="radio" id="episode-six" name="favorite-episode" value="Episode-VI">
-          <label for="episode-six"><em>Episode VI: Return of the Jedi</em></label>
-        </div>
-
-        <div>
-          <p>Who is your favorite Star Wars villian?</p>
+      <div class="form-wrapper">
+        <form id="survey-form">
+          <div>
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
           
-          <select name="favorite-villian" id="dropdown" required>
-            <option disabled selected value>Select an option</option>
-            <option value="darth-vader">Darth Vader</option>
-            <option value="palpatine">Palpatine</option>
-            <option value="count-dooku">Count Dooku</option>
-            <option value="darth-maul">Darth Maul</option>
-            <option value="kylo-ren">Kylo Ren</option>
-            <option value="snoke">Snoke</option>
-          </select>
-        </div>
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+            
+            <label id="number-label" for="number">Age:</label>
+            <input type="number" min="0" max="100" id="number" name="age" placeholder="Enter your age">
+          </div>
+
+          <div>
+            <p>Which episode from the Original Trilogy is your favorite?</p>
+            <div>
+              <input type="radio" id="episode-four" name="favorite-episode" value="Episode-IV">
+              <label for="episode-four"><em>Episode IV: A New Hope</em></label>
+            </div>
+            <div>
+              <input type="radio" id="episode-five" name="favorite-episode" value="Episode-V">
+              <label for="episode-five"><em>Episode V: The Empire Strikes Back</em></label>
+            </div>
+            <div>
+              <input type="radio" id="episode-six" name="favorite-episode" value="Episode-VI">
+              <label for="episode-six"><em>Episode VI: Return of the Jedi</em></label>
+            </div>
+          </div>
+
+          <div>
+            <p>Who is your favorite Star Wars villian?</p>
+            
+            <select name="favorite-villian" id="dropdown" required>
+              <option disabled selected value>Select an option</option>
+              <option value="darth-vader">Darth Vader</option>
+              <option value="emperor-palpatine">Emperor Palpatine</option>
+              <option value="count-dooku">Count Dooku</option>
+              <option value="darth-maul">Darth Maul</option>
+              <option value="kylo-ren">Kylo Ren</option>
+              <option value="snoke">Snoke</option>
+            </select>
+          </div>
+          
+          
+          <div id="planets">
+          <p>Which planets within the world of Star Wars are your favorite?</p>
+          <input type="checkbox" id="mustafar" name="favorite" value="mustafar">
+          <label for="mustafar">Mustafar</label>
+          
+          <input type="checkbox" id="coruscant" name="favorite" value="coruscant">
+          <label for="coruscant">Coruscant</label>
+         
+          <input type="checkbox" id="hoth" name="favorite" value="hoth">
+          <label for="hoth">Hoth</label>
         
-        <br>
-        <div>
-        <p>Which plaents within the world of Star Wars are your favorite?</p>
-        <input type="checkbox" id="mustafar" name="favorite" value="mustafar">
-        <label for="mustafar">Mustafar</label>
-        <br>
-        <input type="checkbox" id="coruscant" name="favorite" value="coruscant">
-        <label for="coruscant">Coruscant</label>
-        <br>
-        <input type="checkbox" id="hoth" name="favorite" value="hoth">
-        <label for="hoth">Hoth</label>
-        <br>
-        <input type="checkbox" id="tatooine" name="favorite" value="tatooine">
-        <label for="tatooine">Tatooine</label>
-        <br>
-        <input type="checkbox" id="naboo" name="favorite" value="naboo">
-        <label for="naboo">Naboo</label>
-        </div>
+          <input type="checkbox" id="tatooine" name="favorite" value="tatooine">
+          <label for="tatooine">Tatooine</label>
+          
+          <input type="checkbox" id="naboo" name="favorite" value="naboo">
+          <label for="naboo">Naboo</label>
+          </div>
 
-        <br>
-        <br>
+          
 
-        <div>
-        <p>When did you first become a fan of Star Wars? How?</p>
+          <div class="text-question">
+            <p>When did you first become a fan of Star Wars? How and why?</p>
+            <textarea class="text-box">
+            </textarea>
+          </div>
+          
+          
+          <div class="button-style">
+            <button id="submit">Submit</button>
+          </div>
 
-        <textarea rows="5" cols="75">
-        </textarea>
-        
-        <br>
-        <br>
-       
-        <input type="submit" value="submit" id="submit">
-        <br>
-        </div>
-
-      </form>
+        </form>
+      </div>
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
